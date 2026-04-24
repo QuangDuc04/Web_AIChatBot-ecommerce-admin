@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/ME/Ecommerce/Web/ecommerce-backend/**)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}
