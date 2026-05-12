@@ -10,6 +10,14 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  optimizeDeps: {
+    include: ['quill-blot-formatter'],
+  },
+  build: {
+    commonjsOptions: {
+      include: [/quill-blot-formatter/, /node_modules/],
+    },
+  },
   server: {
     port: 5173,
     proxy: {
